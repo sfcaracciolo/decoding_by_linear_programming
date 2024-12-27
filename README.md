@@ -1,4 +1,4 @@
-**# Decoding by Linear Programming
+# Decoding by Linear Programming
 
 ### Article to Analyze
 **"Decoding by Linear Programming" by Candes (2005)**
@@ -149,4 +149,4 @@ Reproducing paper figs 2a, 2b and 3
 <img src="figs/n512_k2.png" alt="drawing" width=""/>
 
 <img src="figs/n128_k4.png" alt="drawing" width=""/>
-**
+

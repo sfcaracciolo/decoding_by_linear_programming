@@ -22,7 +22,7 @@ This article addresses the error-correcting problem where a code $f$ is transfor
 1. $m > n$
 2. $A$ is full-rank
 
-The equation $Af + e = y $ is equivalent to $Af = b$, where $b = y - e$.
+The equation $Af + e = y$ is equivalent to $Af = b$, where $b = y - e$.
 
 From linear algebra:
 - $r(A) \leq \min(m, n)$

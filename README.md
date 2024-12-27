@@ -55,7 +55,7 @@ $$f^*: b = Af, \quad A^{-1} \text{ exists.}$$
 - $r(A) = n$, with $\text{col}(A) = \\{c_1, \dots, c_n\\}, c_i \in \mathbb{R}^m$
 - $\dim[k(A)] = n - n = 0$
 
-The linear system $Af = b $has a solution if and only if $b \in \text{col}(A)$.  
+The linear system $Af = b$ has a solution if and only if $b \in \text{col}(A)$.  
 - If $b \in \text{col}(A)$, the solution is unique ($\dim[k(A)] = 0$). Solved by finding $f$:  
 
 $$Af = b$$
@@ -64,7 +64,7 @@ $$Af = b$$
 
 $$\|Af - b\| \text{ is minimized.}$$
 
-**Note:** Both cases can be solved by minimizing$\|Af - b\|$.
+**Note:** Both cases can be solved by minimizing $\|Af - b\|$.
 
 ---
 
@@ -128,14 +128,14 @@ $$e^* = \arg\min \|Fe - y_m\|_1 \quad \text{(P)}$$
 1. Develop a solver for (P) using linear programming.
 2. Construct $A$-matrices to test the maximum density level of $e$ for exact recovery of $f$:
    - Build $A \in \mathbb{R}^{m \times n}$ with structure to 
-   satisfy$\ell_0 / \ell_1$ equivalence.
+   satisfy $\ell_0 / \ell_1$ equivalence.
    - Build random $f$.
    - Build $F \in \mathbb{R}^{p \times m}$ from $A$
    - For $\rho \in [0, 1]$:
      - $n$-times:
        - Build sparse random $e$.
        - Compute $y = Af + e$
-       - Compute$\hat{y} = F y$
+       - Compute $\hat{y} = F y$
        - Solve (P) given $F$ and $\hat{y}$.
        - If $e^* = e$, increment $f_{\rho}$ by $1/n$.
    - Plot $\rho$ vs. $f_{\rho}$ to find the critical threshold.
